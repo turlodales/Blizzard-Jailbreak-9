@@ -1696,8 +1696,7 @@ uint32_t find_allproc(uint32_t region, uint8_t* kdata, size_t ksize)
 }
 
 // NOP out the conditional branch here.
-uint32_t find_tfp0_patch(uint32_t region, uint8_t* kdata, size_t ksize)
-{
+uint32_t find_tfp0_patch(uint32_t region, uint8_t* kdata, size_t ksize){
     // Find the beginning of task_for_pid function
     const struct find_search_mask search_masks[] =
     {
